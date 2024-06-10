@@ -1,0 +1,52 @@
+/*
+Combind
+*/
+.root-thirteen, 
+.root-fourteen,
+.root-fifteen {
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    .app-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1.heavy-text {
+            font-family: $font-hackney;
+            font-size: 4.06rem;
+            font-weight: normal;
+            line-height: 1;
+            color: $color-white;
+            margin: 0 1.5rem 2rem;
+        }
+    }
+
+}
+
+/*
+Root 13
+Page
+*/
+.root-thirteen {
+    background-image: url(../images/BG-13.png);
+
+}
+
+/*
+Root 14
+Page
+*/
+.root-fourteen {
+    background-image: url(../images/BG-14.png);
+}
+
+/*
+Root 15
+Page
+*/
+.root-fifteen {
+    background-image: url(../images/BG-15.png);
+}

@@ -1,0 +1,94 @@
+.rypt-two {
+    background-image: url(../images/BG-rypt-1.png);
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    .app-body {
+        height: 85vh;
+
+        .body-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.3rem;
+            margin-top: 5vh;
+
+            .rect-card-rounded {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+                border-radius: 30px;
+                overflow: hidden;
+                padding: 1rem 1.5rem;
+                align-items: center;
+                box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, .302);
+
+                &::before {
+                    content: " ";
+                    background-color: $color-black;
+                    opacity: 0.4;
+                    position: absolute;
+                    left:0;
+                    right: 0;
+                    top:0;
+                    bottom: 0;
+                    z-index: -1;
+                    border-radius: 30px;
+                }
+
+                &:nth-child( odd ) {
+                    border-right: 3px solid $color-red;
+                }
+
+                &:nth-child( even ) {
+                    border-left: 3px solid $color-red;
+                }
+
+                .rect-card-img {
+                    flex-basis: 25%;
+                    text-align: center;
+
+                    img {
+                        height: auto;
+                        width: 4rem;
+                        margin: auto;
+                    }
+                }
+
+                &:first-child {
+                    img {
+                        width: 2.8rem;
+                    }
+                }
+
+                h3 {
+                    flex-basis: 75%;
+                    font-family: $font-barlow;
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    
+        .cta {
+            button {
+                width: 90%;
+            }
+        }
+    }
+
+    footer {
+        height: 5vh;
+    }
+
+
+}

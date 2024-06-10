@@ -1,0 +1,166 @@
+/*
+* Variables
+*/
+$color-white: #ffffff;
+$color-red: #D63231;
+$color-black: #000000;
+$color-green: #4CD964;
+
+$font-hackney: 'hackney', sans-serif;
+$font-opensans: "Open Sans", sans-serif;
+$font-barlow: "Barlow Condensed", sans-serif;
+$font-inter: "Inter", sans-serif; //arial
+
+
+/*
+Local Fonts
+*/
+@font-face {
+    font-family: 'hackney';
+    src: url('../fonts/hackneypersonaluseonly-webfont.woff2') format('woff2'),
+        url('../fonts/hackneypersonaluseonly-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $color-white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 15vh;
+    padding: 3rem 1.5rem 1rem;
+}
+
+.app-body {
+    height: 75vh;
+}
+
+footer {
+    height: 10vh;
+}
+
+.wrap {
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    font-size: 16px;
+    z-index: 0;
+
+    .overlay {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $color-black;
+        opacity: 0.4;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+    }
+
+    &::before {
+        content: " ";
+        height: 250px;
+        position: absolute;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .app-body {
+        padding: 1.5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .cta {
+            text-align: center;
+    
+            button {
+                background-color: $color-red;
+                font-family: $font-inter;
+                border: 0;
+                color: $color-white;
+                font-size: 1rem;
+                width: 100%;
+                padding: 0.8rem 0;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    footer {
+        .smoking-warning {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background-color: $color-white;
+            color: $color-black;
+            padding: 0.5rem 0;
+        }
+
+        .smoking-warning h5 {
+            font-family: $font-inter;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.medium-bold-text {
+    font-family: $font-barlow;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.35rem;
+}
+
+
+
+/*
+Css Import
+*/
+@import "root-13-14-15.scss";
+@import "rypt-1.scss";
+@import "rypt-2.scss";
+
+
+
