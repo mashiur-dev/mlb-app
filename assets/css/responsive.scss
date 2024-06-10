@@ -1,4 +1,8 @@
 /* Small devices ( tablets, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+    .wrap {
+        &:before{
+            height: 480px;
+        }
+    }
 }
