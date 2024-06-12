@@ -157,5 +157,52 @@
         height: 10vh;
     }
 
+}
 
+
+@media screen and (max-width: 380px) {
+    .rypt-four{
+        .app-body {
+            .body-content {
+                #dual-slider {
+                    .slide-preview {
+                        .item-inner {
+                            max-width: 16rem;
+                            padding: 2rem 1.2rem;
+                
+                            img {
+                                max-height: 10rem;
+                            }
+
+
+                        }
+                    }
+
+                    .slide-thumb {
+                        .item {
+                            .item-inner {
+                                &::before {
+                                    height: 3.5rem;
+                                }
+
+                                img {
+                                    max-width: 5rem;
+                                }
+                            }
+
+                            &.slick-center .item-inner {
+                                &::before {
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    
 }
