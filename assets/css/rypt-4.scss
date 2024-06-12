@@ -1,0 +1,161 @@
+.rypt-four {
+    background-image: url(../images/BG-rypt-1.png);
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    .app-body {
+        padding: 0;
+        height: 80vh;
+
+        .body-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.3rem;
+            margin-top: 5vh;
+            
+            .game-steps {
+                padding: 0 1.5rem;
+                margin-top: 2rem;
+                margin-bottom: 1.25rem;
+                height: 1.25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .left-arrow {
+                    position: absolute;
+                    left: 5%;
+                    top:-4px;
+                }
+
+                .progress-bar {
+                    background-color: $color-white;
+                    height: 0.4rem;
+                    width: 10rem;
+                    border-radius: 0.5rem;
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        background-color: $color-red;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        height: 100%;
+                    }
+                }
+            }
+
+            #dual-slider {
+                .slide-preview {
+                    margin-bottom: 1.25rem;
+                    .item-inner {
+                        max-width:18rem;
+                        margin: 0px auto;
+                        display: flex;
+                        justify-content: center;
+                        background-color: #ffffff3d;
+                        padding: 3.5rem 1.5rem;
+                        border-radius: 3rem;
+
+                        img {
+                            max-height: 12rem;
+                        }
+                    }
+                }
+
+                .slide-thumb {
+                    .slick-track {
+                        display: flex !important;
+                    }
+
+                    .slick-slide {
+                        // height: inherit !important;
+                        align-self: baseline;
+                    }
+
+                    .item-inner {
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+
+                        &:before {
+                            content: " ";
+                            background-color: $color-white;
+                            max-width: 80%;
+                            height: 4.5rem;
+                            opacity: 0.3;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            z-index: -1;
+                            border-radius: 1rem;
+                            margin: 0px auto;
+                        }
+
+                        img {
+                            max-width:8rem;
+                        }
+                    }
+
+                    .slick-center {
+                        
+                        .item-inner {
+                            // margin-bottom: -20px;
+
+                            &:before {
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .slick-dots {
+                        text-align: center;
+                        margin-top: 0.8rem;
+                        li {
+                            display: inline-block;
+                            margin: 0 0.4rem;
+                            button {
+                                border: 0;
+                                background-color:#666666;
+                                text-indent: -9999px;
+                                width: 0.5rem;
+                                height: 0.5rem;
+                                border-radius: 100%;
+                            }
+
+                            &.slick-active {
+                                button {
+                                    background-color: $color-red;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    
+        .cta {
+            button {
+                width: 90%;
+            }
+        }
+    }
+
+    footer {
+        height: 10vh;
+    }
+
+
+}

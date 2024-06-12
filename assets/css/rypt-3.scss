@@ -1,0 +1,161 @@
+.rypt-three {
+    background-image: url(../images/BG-rypt-1.png);
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    .app-body {
+        padding: 0;
+        height: 80vh;
+
+        .body-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.3rem;
+            margin-top: 5vh;
+            
+            /* Carousel */
+            #single-carousel {
+                .slick-track {
+                    margin-top: 1rem;
+                }
+                .item {
+                    background-color: #dddddd52;
+                    margin: 0px 10px;
+                    border-radius: 20px;
+                    text-align: center;
+                    align-content: center;
+
+                    .item-content {
+                        height: 120px;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 1rem;
+                    }
+
+                    img {
+                        width: auto;
+                        max-height: 3.35rem;
+                        margin: 0 auto;
+                        transition: all 300ms ease;
+                        opacity: 0.7;
+                    }
+                
+                    h3 {
+                        font-size: 0.85rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+
+                    &.slick-center {
+                        height: 9.35rem;
+                        margin-top: -1rem;
+
+                        img {
+                            -moz-transform: scale(1.3);
+                            -ms-transform: scale(1.3);
+                            -o-transform: scale(1.3);
+                            -webkit-transform: scale(1.3);
+                            opacity: 1;
+                            transform: scale(1.3);
+                        }
+                    }
+
+                    
+                }
+            }
+
+            /* Event */
+            .event {
+                .event-title {
+                    font-family: $font-barlow;
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                    line-height: 1.5rem;
+                    margin: 0.8rem 1.25rem;
+                }
+
+                .event-inner {
+                    background-image: url(../images/event-background.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    .single-event {
+                        font-family: $font-barlow;
+                        padding: 0.8rem 1.25rem;
+                        box-shadow: 0px 0px 2px #000;
+
+                        &::after {
+                            content: " ";
+                            filter: blur(6);
+                        }
+
+                        &.right,
+                        &.left {
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+
+                        &.right {
+                            background-image: url(../images/event-overlay-right.png);
+                            background-position: center right;
+                        }
+
+                        &.left {
+                            background-image: url(../images/event-overlay-left.png);
+                            background-position: center left;
+                        }
+
+                        a {
+                            color: $color-white;
+                            text-decoration: none;
+                        }
+
+                        h2 {
+                            font-size: 1.6rem;
+                            font-weight: 600;
+                            line-height: 1.8rem;
+                            text-transform: uppercase;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 0.8rem;
+                            img {
+                                margin-left: 0.6rem;
+                                margin-top: -0.5rem;
+                            }
+                        }
+
+                        h5 {
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                            line-height: 1.12rem;
+                            span {
+                                margin-left: 1.25rem;
+                            }
+                        }
+                    }
+                }
+}
+        }
+    
+        .cta {
+            button {
+                width: 90%;
+            }
+        }
+    }
+
+    footer {
+        height: 10vh;
+    }
+
+
+}
