@@ -43,15 +43,19 @@ $(document).ready(function () {
     asNavFor: ".slide-thumb",
   });
 
-  $(".slide-thumb").slick({
-    slidesToShow: 1,
-    centerMode: true,
-    centerPadding: "30%",
-    slidesToScroll: 1,
-    asNavFor: ".slide-preview",
-    dots: true,
-    arrows: false,
-    focusOnSelect: true,
-  });
+  $(".slide-thumb")
+    .slick({
+      slidesToShow: 1,
+      centerMode: true,
+      centerPadding: "30%",
+      slidesToScroll: 1,
+      asNavFor: ".slide-preview",
+      dots: true,
+      arrows: false,
+      focusOnSelect: true,
+    });
+  
+
+
 
 });

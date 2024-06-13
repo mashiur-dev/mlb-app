@@ -6,12 +6,12 @@
     }
 
     header {
-        height: 10vh;
+        height: 10%;
     }
 
     .app-body {
         padding: 0;
-        height: 80vh;
+        height: 80%;
 
         .body-content {
             display: flex;
@@ -76,11 +76,13 @@
                 .slide-thumb {
                     .slick-track {
                         display: flex !important;
+                        align-items: stretch;
                     }
 
                     .slick-slide {
-                        // height: inherit !important;
+                        height: inherit !important;
                         align-self: baseline;
+                        gap:20px;
                     }
 
                     .item-inner {
@@ -92,7 +94,7 @@
                             content: " ";
                             background-color: $color-white;
                             max-width: 80%;
-                            height: 4.5rem;
+                            height: 3.5rem;
                             opacity: 0.3;
                             position: absolute;
                             left: 0;
@@ -104,14 +106,14 @@
                         }
 
                         img {
-                            max-width:8rem;
+                            width:auto;
+                            height: 6rem;
                         }
                     }
 
-                    .slick-center {
-                        
+                    .slick-current {
+
                         .item-inner {
-                            // margin-bottom: -20px;
 
                             &:before {
                                 height: 100%;
@@ -154,24 +156,26 @@
     }
 
     footer {
-        height: 10vh;
+        height: 10%;
     }
 
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-height: 667px) {
     .rypt-four{
         .app-body {
             .body-content {
                 #dual-slider {
                     .slide-preview {
+                        margin-bottom: 1rem;
+
                         .item-inner {
-                            max-width: 16rem;
-                            padding: 2rem 1.2rem;
-                
+                            max-width: 12rem;
+                            padding: 2rem 1rem;
+
                             img {
-                                max-height: 10rem;
+                                max-height: 8rem;
                             }
 
 
@@ -186,7 +190,7 @@
                                 }
 
                                 img {
-                                    max-width: 5rem;
+                                    // max-width: 4.5rem;
                                 }
                             }
 
