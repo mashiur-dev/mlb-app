@@ -1,0 +1,31 @@
+.rypt-ten {
+
+    background-image: url(../images/BG-rypt-1.png);
+    
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+
+
+    .app-body {
+        .body-content {
+            
+        }
+
+    }
+
+}
+
+
+@media screen and (max-height: 740px) {
+
+    .rypt-ten {
+        .app-body {
+            .body-content {
+                
+            }
+        }
+    }
+
+}

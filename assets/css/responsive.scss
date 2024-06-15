@@ -12,7 +12,7 @@
 /*
 * Small Size Mobile
 */
-@media screen and (max-height: 667px) {
+@media screen and (max-height: 740px) {
 
     /*
     * Box Customized slide with preview
@@ -29,6 +29,13 @@
                 }
             }
         }
+    }
+
+    /*
+    * .spin-wheel-winner-info
+    */
+    .spin-wheel-winner-info {
+        
     }
 
 }

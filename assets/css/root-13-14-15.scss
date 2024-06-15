@@ -10,18 +10,7 @@ Combind
     }
 
     .app-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
 
-        h1.heavy-text {
-            font-family: $font-hackney;
-            font-size: 4.06rem;
-            font-weight: normal;
-            line-height: 1;
-            color: $color-white;
-            margin: 0 1.5rem 2rem;
-        }
     }
 
 }
