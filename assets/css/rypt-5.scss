@@ -1,23 +1,40 @@
 .rypt-five {
-
-    .app-body {
-        
-
-        .body-content {
-
-
-        }
+    background-image: url(../images/BG-rypt-1.png);
     
-
+    &::before {
+        background-image: url(../images/header-ribbon.png);
     }
 
+    header {
+        height: 10%;
+    }
+
+    .app-body {
+        padding: 0;
+        height: 80%;
+        
+        .body-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.3rem;
+            margin-top: 5vh;
+        }
+
+        .cta {
+            button {
+                width: 90%;
+            }
+        }
+    }
 
 }
 
 
 @media screen and (max-height: 667px) {
 
+    .rypt-five {
 
+    }
 
-    
 }

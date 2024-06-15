@@ -204,6 +204,124 @@ ul {
     }
 }
 
+/*
+* Game Steps
+*/
+.game-steps {
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .left-arrow {
+        position: absolute;
+        left: 5%;
+        top: -4px;
+    }
+
+    .progress-bar {
+        background-color: $color-white;
+        height: 0.4rem;
+        width: 10rem;
+        border-radius: 0.5rem;
+        position: relative;
+
+        span {
+            position: absolute;
+            background-color: $color-red;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+    }
+}
+
+/*
+* Box Customized slide with preview
+*/
+.box-customize-preview {
+    .customized-box-preview {
+        margin-bottom: 1rem;
+
+        .customized-box-preview-inner {
+            max-width: 18rem;
+            padding: 3.5rem 1.5rem;
+            background-color: hsla(0, 0%, 100%, .239);
+            border-radius: 3rem;
+            display: flex;
+            justify-content: center;
+            margin: 0px auto;
+            
+            &.bg-preview {
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            img {
+                max-height: 12rem;
+            }
+
+        }
+    }
+
+    .customized-addons-slide {
+        .item {
+            margin: 0 0.5rem;
+
+            .item-inner {
+                padding: 1.5rem 1rem;
+                background-color: hsla(0, 0%, 100%, .239);
+                border-radius: 1.5rem;
+                display: flex;
+                justify-content: center;
+
+                .box-title {
+                    .title {
+                        font-family: $font-opensans;
+                        font-size: 0.8rem;
+                        font-weight: 700;
+                        margin-right: 0.8rem;
+                        text-transform: uppercase;
+                        align-content: center;
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            text-align: center;
+            margin-top: 0.8rem;
+
+            li {
+                display: inline-block;
+                margin: 0 0.4rem;
+
+                button {
+                    border: 0;
+                    background-color: #666666;
+                    text-indent: -9999px;
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    border-radius: 100%;
+                }
+
+                &.slick-active {
+                    button {
+                        background-color: $color-red;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 /*
 Css Import
@@ -214,6 +332,7 @@ Css Import
 @import "rypt-3.scss";
 @import "rypt-4.scss";
 @import "rypt-5.scss";
+@import "rypt-6.scss";
 
 
 @import "responsive.scss"

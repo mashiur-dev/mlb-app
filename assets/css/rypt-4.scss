@@ -19,41 +19,6 @@
             justify-content: space-between;
             gap: 0.3rem;
             margin-top: 5vh;
-            
-            .game-steps {
-                padding: 0 1.5rem;
-                margin-top: 2rem;
-                margin-bottom: 1.25rem;
-                height: 1.25rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-
-                .left-arrow {
-                    position: absolute;
-                    left: 5%;
-                    top:-4px;
-                }
-
-                .progress-bar {
-                    background-color: $color-white;
-                    height: 0.4rem;
-                    width: 10rem;
-                    border-radius: 0.5rem;
-                    position: relative;
-
-                    span {
-                        position: absolute;
-                        background-color: $color-red;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        height: 100%;
-                    }
-                }
-            }
 
             #dual-slider {
                 .slide-preview {
@@ -177,8 +142,6 @@
                             img {
                                 max-height: 8rem;
                             }
-
-
                         }
                     }
 

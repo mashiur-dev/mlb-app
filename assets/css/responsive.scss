@@ -1,8 +1,34 @@
-/* Small devices ( tablets, 600px and up) */
+/* 
+* tablets, 600px and up
+*/
 @media only screen and (min-width: 600px) {
     .wrap {
         &:before{
             height: 60vh;
         }
     }
+}
+
+/*
+* Small Size Mobile
+*/
+@media screen and (max-height: 667px) {
+
+    /*
+    * Box Customized slide with preview
+    */
+
+    .box-customize-preview {
+        .customized-box-preview {
+            .customized-box-preview-inner {
+                max-width: 12rem;
+                padding: 2rem 1rem;
+
+                img {
+                    max-height: 8rem;
+                }
+            }
+        }
+    }
+
 }
