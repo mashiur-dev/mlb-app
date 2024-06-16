@@ -1,0 +1,84 @@
+.rypt-twelve {
+
+    background-image: url(../images/BG-rypt-1.png);
+    
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    .app-body {
+        .body-content {
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            gap:2.5rem;
+
+            .top-content {
+                .medium-bold-text {
+                    font-size: 2.25rem;
+                }
+            }
+
+            .middle-content {
+                .twenty-mad {
+                    width: 12rem;
+                    margin: 0px auto;
+                    background-color: $bg-gray-transparent;
+                    padding: 1.2rem 0rem;
+                    border-radius: 1.5rem;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .content-bottom {
+                .winning-prize-code {
+                    background-color: $bg-gray-transparent;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 2rem 1.8rem;
+                    justify-content: space-between;
+                    border-radius: 1rem;
+
+                    h2 {
+                        font-family: $font-opensans;
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        color: $color-white;
+                    }
+                }
+
+                h4{
+                    font-size: 0.75rem;
+                    font-family: $font-opensans;
+                    text-align: left;
+                    padding: 0.5rem 2rem;
+                }
+            }
+
+        }
+
+        .cta {
+            button {
+                width: 90%;
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-height: 740px) {
+
+    .rypt-twelve {
+        .app-body {
+            .body-content {
+                gap: 2rem;
+            }
+        }
+    }
+
+}

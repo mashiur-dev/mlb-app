@@ -28,42 +28,47 @@
 </head>
 
 <body>
-    <div class="wrap rypt-ten">
+    <div class="wrap rypt-eight rypt-nine sym-ten">
         <span class="overlay"></span> <!-- Background Overlay -->
 
         <header>
-
+            <h2 class="medium-bold-text">
+                Fais tourner la roue pour découvrir ton cadeau!
+            </h2>
         </header> <!-- Header -->
 
         <div class="app-body">
             <div class="body-content">
-                <div class="top-content">
-                    <div class="top-content-top">
-                        <h1 class="medium-bold-text">Merci</h1>
-                        <h2 class="medium-bold-text">
-                            Pour ta participation!
-                        </h2>
+                <div class="spin-wheel-preview">
+                    <img src="assets/images/spin-wheel-with-prize.png" alt="">
+                </div>
+
+                <div class="spin-wheel-winner-info input-group-icon">
+                    <div class="winner-info-input-wrap input-group-wrap">
+                        <label class="winner-info-location" for="winner-info-location">
+                            <select required name="winner-info-location" id="winner-info-location">
+                                <option value="" selected>Sélectionner ta région</option>
+                                <option value="">option 1</option>
+                                <option value="">option 2</option>
+                                <option value="">option 3</option>
+                            </select>
+                        </label>
                     </div>
-                    
-                    <h2 class="medium-bold-text">
-                        Recommence pour plus de fun!
-                    </h2>
-                </div>
 
-                <div class="middle-content">
-                    <img src="assets/images/icon-reset.png" alt="">
-                </div>
-
-                <div class="content-bottom">
-                    <h2 class="medium-bold-text">
-                        Continue de Scanner pour<br>
-                        découvrir les nouveaux jeuX
-                    </h2>
+                    <div class="winner-info-input-wrap input-group-wrap">
+                        <label class="winner-info-unique-code" for="winner-info-unique-code">
+                            <input required type="text" id="winner-info-unique-code" placeholder="Entrer ton unique code">
+                        </label>
+                        
+                        <div class="winner-info-input-warning input-group-warning">
+                            <span>Le code n’est pas valide</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="cta">
-                <button>Recommencer</button>
+                <button>Faisons tourner la roue</button>
             </div>
         </div>
 

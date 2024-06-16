@@ -1,0 +1,25 @@
+.sym-nine {
+    background-image: url(../images/BG-sym-2.png);
+
+    header {
+
+    }
+
+    .app-body {
+
+    }
+
+}
+
+
+@media screen and (max-height: 740px) {
+
+    .sym-nine {
+        .app-body {
+            .body-content {
+                
+            }
+        }
+    }
+
+}

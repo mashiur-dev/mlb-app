@@ -10,7 +10,42 @@
 
     .app-body {
         .body-content {
-            
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            gap:3rem;
+
+            .top-content {
+                .top-content-top {
+                    margin-bottom: 2.5rem;
+
+                    h1.medium-bold-text {
+                        font-size: 2.25rem;
+                    }
+
+                    h2.medium-bold-text {
+                        font-size: 1.75rem;
+                    }
+                }
+
+                .medium-bold-text {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .middle-content {
+                
+            }
+
+            .content-bottom {
+                .medium-bold-text {
+                    font-size: 1.5rem;
+                }
+            }
+
+
+
         }
 
     }
@@ -23,7 +58,13 @@
     .rypt-ten {
         .app-body {
             .body-content {
-                
+                gap: 2rem;
+
+                .top-content {
+                    .top-content-top {
+                        margin-bottom: 2rem;
+                    }
+                }
             }
         }
     }
