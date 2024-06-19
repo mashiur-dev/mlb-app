@@ -1,0 +1,45 @@
+.sym-saven {
+    background-image: url(../images/BG-sym-2.png);
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    .app-body {
+        .body-content {
+            .selected-event-preview {
+                .text-on-event-preview-text {
+                    h3 {
+                        font-family: $font-barlow;
+                        font-size: 2rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-height: 740px) {
+
+    .sym-saven {
+
+        .app-body {
+            .body-content {
+                .selected-event-preview {
+                    .text-on-event-preview-text {
+                        h3 {
+                            font-size: 1.6rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}

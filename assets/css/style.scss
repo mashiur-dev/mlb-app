@@ -41,6 +41,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: $color-white;
+    background-color: $color-black;
 }
 
 a {
@@ -480,12 +481,21 @@ Css Import
 @import "rypt-962.scss";
 @import "rypt-11.scss";
 @import "rypt-12.scss";
+@import "sym-4.scss";
+@import "sym-5.scss";
+@import "sym-6.scss";
+@import "sym-7.scss";
+@import "sym-8.scss";
 @import "sym-9.scss";
 @import "sym-10.scss";
 @import "sym-11.scss";
 @import "sym-963.scss";
 @import "sym-12.scss";
 @import "sym-13.scss";
+@import "venue-4.scss";
+@import "venue-8.scss";
+@import "venue-9.scss";
+@import "venue-10.scss";
 
 
 @import "responsive.scss"

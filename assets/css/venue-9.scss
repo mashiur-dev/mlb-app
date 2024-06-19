@@ -1,0 +1,25 @@
+.venue-nine {
+    background-image: url(../images/BG-venue.png);
+
+    header {
+
+    }
+
+    .app-body {
+
+    }
+
+}
+
+
+@media screen and (max-height: 740px) {
+
+    .venue-nine {
+        .app-body {
+            .body-content {
+                
+            }
+        }
+    }
+
+}

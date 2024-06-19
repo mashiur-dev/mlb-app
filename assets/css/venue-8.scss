@@ -1,0 +1,29 @@
+/*
+Combind
+*/
+.venue-eight {
+    background-image: url(../images/BG-venue.png);
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    .app-body {
+        .heavy-text {
+            margin-bottom: 1rem;
+        }
+
+        .body-content {
+            flex-basis: 0px;
+            flex-grow: 1;
+            object-fit: contain;
+            overflow-y: auto;
+            text-align: center;
+
+            img {
+                max-height: 100%;
+            }
+        }
+    }
+
+}

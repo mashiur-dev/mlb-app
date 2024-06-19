@@ -1,0 +1,80 @@
+.sym-five {
+    background-image: url(../images/BG-sym-2.png);
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+    
+    header {
+
+    }
+
+    .app-body {
+        .body-content {
+            .remaining-time {
+                background-color: rgba(124, 124, 124, 0.25);
+                padding: 0.8rem 0.5rem;
+                font-size: 1rem;
+                border-radius: 1rem;
+                margin-bottom: 1rem;
+
+                font-family: $font-barlow;
+                h4 {
+                    font-weight: 200;
+                }
+
+                .remaining-time-inner{
+                    h5 {
+                        font-weight: 200;
+                    }
+
+                    .time-steps {
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 0.4rem;
+                        span {
+                            background-color: $color-white;
+                            width: 18%;
+                            height: 2px;
+                            margin-right: 2%;
+
+                            &.active {
+                                background-color: $color-red;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .selected-event-preview {
+                text-align: center;
+                > img {
+                    border-radius: 1.25rem;
+                    max-width: 100%;
+                    border: 1px solid $color-red;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-height: 740px) {
+
+    .sym-five {
+
+        .app-body {
+            .body-content {
+
+                .selected-event-preview {
+                    
+                    img {
+                        max-height: 18rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

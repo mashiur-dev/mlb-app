@@ -1,0 +1,100 @@
+.sym-six {
+    background-image: url(../images/BG-sym-2.png);
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    .upper-overlay {
+        position: absolute;
+        background-color: $color-black;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0.5;
+    }
+    
+    header {
+
+    }
+
+    .app-body {
+        .body-content {
+            .selected-event-preview {
+                position: relative;
+
+                img {
+                    position: relative;
+                    z-index: -1;
+                }
+
+                .text-on-event-preview-text {
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                    left: 0;
+                    padding: 1rem;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    align-self: center;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    z-index: 3;
+
+                    h2 {
+                        font-family: $font-barlow;
+                        font-size: 2.25rem;
+                        text-transform: uppercase;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .cta {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    footer {
+        position: relative;
+
+        .smoking-warning {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            z-index: 2;
+            height: min-content;
+        }
+    }
+
+}
+
+
+@media screen and (max-height: 740px) {
+
+    .sym-six {
+
+        .app-body {
+            .body-content {
+                .selected-event-preview {
+                    .text-on-event-preview-text {
+                        h2 {
+                            font-size: 1.8rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
