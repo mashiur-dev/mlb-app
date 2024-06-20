@@ -1,0 +1,35 @@
+.venue-six {
+    background-image: url(../images/BG-venue.png);
+
+    &::before {
+        background-image: url(../images/header-ribbon.png);
+    }
+
+    header {
+
+    }
+
+    .app-body {
+        .body-content {
+            .rectangular-box-edge {
+
+            
+                &.right {
+                    background-image: url(../images/rectangular-arrow-7.png);
+                }
+
+                &.left {
+                    background-image: url(../images/rectangular-arrow-6.png);
+                }
+            }
+        }
+    
+        .cta {
+        }
+    }
+
+    footer {
+    }
+
+
+}
