@@ -71,13 +71,21 @@
 
 
     .app-body {
-        height: 60%;
+        height: 55%;
+
+        .body-content {
+            height: 100%;
+        }
 
         .rectangular-arrow-box {
+            height: 100%;
+
             a {
                 background-repeat: no-repeat;
                 background-size: cover;
                 display: block;
+
+                height: 25%;
 
                 padding: 2.8rem 0rem;
                 color: $color-white;
@@ -158,6 +166,10 @@
         }
     }
 
+    footer {
+        height: 15%;
+    }
+
 }
 
 
@@ -185,11 +197,17 @@
         }
 
         .app-body {
+            height: 52%;
+
             .rectangular-arrow-box {
                 a {
                     padding: 2.2rem 0;
                 }
             }
+        }
+
+        footer {
+            height: 18%;
         }
     }
 

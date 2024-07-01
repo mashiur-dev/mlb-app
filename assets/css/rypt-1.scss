@@ -76,6 +76,13 @@
 
 @media screen and (max-height: 740px) {
     .rypt-one {
+        header {
+            height: 5%;
+            padding-top: 0rem;
+        }
+        .app-body {
+            height: 90%;
+        }
         .cta {
                 .terms-checkbox-list {
                     margin-bottom: 1rem;

@@ -45,7 +45,11 @@
 @media screen and (max-height: 740px) {
 
     .rypt-eight {
+        header {
+            height: 15%;
+        }
         .app-body {
+            height: 80%;
             .body-content {
                 .spin-wheel-preview {
                     margin: 0 auto 1rem;
@@ -55,6 +59,10 @@
                     }
                 }
             }
+        }
+
+        footer {
+            height: 5%;
         }
     }
 

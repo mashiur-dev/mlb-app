@@ -75,6 +75,7 @@ $(document).ready(function () {
   /**
    * Add title on Box
    */
+  let titlePrviewInner = $(".customized-box-preview-inner");
   let titlePrviewBox = $(".customized-box-preview-inner img");
   //let checkBox = $(".box-title input");
   let checkBox = $(".green-checkbox input");
@@ -85,9 +86,8 @@ $(document).ready(function () {
     checkBox.prop("checked", false);
     $(this).prop("checked", true);
 
-    if (titlePrviewBox.length) {
-
-      console.log('exist');
+    if (titlePrviewBox.length && !titlePrviewInner.hasClass("bg-preview")) {
+      console.log("exist");
 
       let getTitle = $(this).data("title");
 
@@ -95,11 +95,8 @@ $(document).ready(function () {
         "src",
         "assets/images/slide-marlboro-with-mic-" + getTitle + ".png"
       );
-
     } else {
-
       console.log("not exist");
-
     }
     
   });

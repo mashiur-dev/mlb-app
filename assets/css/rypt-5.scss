@@ -11,7 +11,7 @@
 
     .app-body {
         padding: 0;
-        height: 80%;
+        height: 75%;
         
         .body-content {
             display: flex;
@@ -19,6 +19,12 @@
             justify-content: space-between;
             gap: 0.3rem;
             margin-top: 5vh;
+
+            .box-customize-preview {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
         }
 
         .cta {
@@ -26,6 +32,10 @@
                 width: 90%;
             }
         }
+    }
+
+    footer {
+        height: 15%;
     }
 
 }
